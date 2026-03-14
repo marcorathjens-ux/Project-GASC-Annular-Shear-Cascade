@@ -1,35 +1,28 @@
-# 🌌 Vector 2035: Quantum Fluid Friction (QFF) & Electronic Drag
+# 🌌 Math V1.1: Quantum Fluid Friction (QFF) & Interfacial Drag Reduction
 
-In the 2035 iteration, we transcend classical Navier-Stokes limitations. By utilizing **monolayer graphene** on the Tesla discs, we exploit the quantum interaction between water dipoles and charge carriers (Dirac fermions).
+## 1. Scale Correction: The Debye-Layer Limitation
+The adversarial audit (V1.0) correctly identified that Quantum Friction ($\tau_q$) is a near-field effect. In the GASC-2035 framework, QFF is strictly limited to the **Electric Double Layer (EDL)** and the **Debye-screening length** ($\lambda_D \approx 1-100\,nm$).
 
-## 1. The Quantum Friction Coefficient ($\lambda_q$)
-Unlike classical friction ($\tau = \mu \cdot \frac{dv}{dy}$), quantum friction arises from the fluctuating electromagnetic fields between the fluid and the solid.
+## 2. Near-Field Electronic Drag ($\tau_{drag}$)
+Instead of applying Volokitin-Persson to the bulk fluid, we focus on the **momentum exchange** between the innermost water layer (adsorbed dipoles) and the Dirac fermions in the graphene lattice.
 
-**The Volokitin-Persson Relation:**
-$$\tau_q \approx \frac{\hbar \cdot v}{\delta_q^4}$$
+**Refined Interfacial Stress:**
+$$\tau_{total} = \tau_{classical} \cdot (1 - \gamma_{q}) + \tau_{q, interfacial}$$
 
-*   $\hbar$: Reduced Planck constant.
-*   $\delta_q$: Quantum vacuum gap / distance to the graphene surface.
-*   $v$: High-velocity flow ($>30\,\text{m/s}$).
+*   $\gamma_{q}$: Quantum-lubricity factor (Reduction of classical no-slip boundary condition).
+*   $\tau_{q, interfacial}$: Direct momentum-to-electron coupling within the $\delta_{q}$ gap ($<10\,nm$).
 
-## 2. Near-Field Radiative Heat-to-Power (NF-RHP)
-At the high velocities within the GASC-module, "friction" normally generates heat. In 2035, we capture this **near-field thermal radiation** before it dissipates into the bulk fluid.
+## 3. Surface-Enhanced Efficiency ($\eta_{2035}$)
+The "Super-Slip" condition is redefined as **Near-Zero Classical Friction** at the interface, enabled by the phonon-mismatch between water and hBN-encapsulated graphene.
 
-**Energy Transfer Rate ($Q$):**
-$$Q = \int_{0}^{\infty} \Theta(\omega, T) \cdot \mathbb{T}(\omega, d) \, d\omega$$
+**Mechanism:**
+The quantum-drag does not "create" energy; it **recaptures** energy that would otherwise be lost to entropy (heat) due to viscous shear at the wall.
 
-*Innovation:* The Tesla discs act as **Thermo-Photovoltaic (TPV)** receivers, converting the microscopic friction-heat directly into electron-hole pairs at the atomic interface.
-
-## 3. The "Super-Slip" Paradox
-By fine-tuning the **Quantum Friction**, we achieve a state where the water has **Zero Classical Friction** (Super-lubricity) but **Maximum Electronic Coupling**.
-
-**Total Harvest Efficiency ($\eta_{quantum}$):**
-$$\eta_{2035} = 1 - \frac{Q_{loss, thermal}}{P_{kinetic, harvested}}$$
-
-*Goal:* Reaching an effective efficiency $\eta > 0.98$ by bypassing the "Heat-Death" of classical mechanical systems.
+$$P_{harvest, 2035} = P_{mech} + \underbrace{\int_A \tau_q \cdot v_{surface} \, dA}_{\text{Recaptured viscous loss}}$$
 
 ---
+## 🔬 TRL 2035 Material Axiom
+To maintain the required $<10\,nm$ gap for QFF, the Tesla discs utilize **atomic-layer deposition (ALD)** of hydrophobic spacers, ensuring the fluid "glides" over the electronic potential of the graphene without classical molecular stiction.
 
-## 🔬 Material Infrastructure (TRL 2035)
-*   **Active Surface:** Twisted Bilayer Graphene (Magic-Angle) to tune electronic density.
-*   **Substrate:** Phonon-optimized Boron Nitride (hBN) for thermal isolation.
+**Status:** `Hardened-QFF-V1.1`  
+**Correction:** `Rescaled to interfacial Debye-layer dimensions.`
