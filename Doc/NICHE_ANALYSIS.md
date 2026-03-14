@@ -8,10 +8,11 @@ Decommissioned mines offer vertical drops of 100m to 1000m.
 *   **GASC Advantage:** As a **pressure-neutral cascade**, GASC modules are distributed along the shaft. Each module handles only its local kinetic energy. 
 *   **Result:** Significantly lower CAPEX and easier maintenance in remote, underground environments.
 
-## 2. Municipal PRV Integration (Urban Mining)
-Pressure Reduction Valves (PRV) in city water mains destroy gravitational energy to protect household pipes.
-*   **GASC vs. PAT:** Conventional turbines (PAT) often cause a significant "pressure drop" that can interfere with the network's hydraulic stability.
-*   **GASC Solution:** The **Selective Shear ($\sigma=0.1$)** allows a precise, non-disruptive energy extraction. It "shaves" the excess pressure without risking a total collapse of the supply pressure.
+## 2. Municipal PRV Integration (Smart Pressure Management)
+Conventional Pressure Reduction Valves (PRV) or Pumps-as-Turbines (PAT) have a fixed hydraulic resistance.
+*   **The PAT Limitation:** Efficiency drops sharply during fluctuating municipal demand (diurnal cycles). Fixed-blade geometry can cause water hammer effects during rapid flow changes.
+*   **The GASC Advantage (Smart-HSB):** Utilizing the **Adaptive Shearing Blade**, GASC modules provide **dynamic pressure regulation**. 
+*   **Benefit:** GASC acts as a "Solid-State PRV" with energy recovery. It can adjust the shear ratio $\sigma$ in milliseconds to stabilize network pressure while maintaining optimal harvesting efficiency, regardless of flow fluctuations.
 
 ## 3. High-Rise Building Infrastructure
 Vertical gray-water or cooling-water drops in skyscrapers (300m+).
