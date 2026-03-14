@@ -13,6 +13,16 @@ The architecture aims for a modular, maintenance-free kinetic energy harvesting 
 
 ---
 
+## 🌊 Architect's Statement: The Infrastructure Harvester
+
+The **GASC-Framework** is not designed to replace high-efficiency dam-based turbines. Instead, it occupies a critical, unserved niche in the global energy landscape: **Non-Invasive Kinetic Energy Recovery (KERS).**
+
+Conventional hydropower requires massive ecological sacrifices through dams and static pressure infrastructure. GASC deconstructs this paradigm by acting as a **"Parasitic Harvester"** within existing vertical conduits—such as municipal water mains, deep-shaft mines, and high-rise building drainage.
+
+> 💡 **Core Philosophy:** We prioritize **Ethical Efficiency** over peak extraction. 520 kW of energy harvested from a city’s "wasted" pressure is more valuable than 922 kW from a destroyed river ecosystem. GASC is the modular, pressure-neutral solution for a sustainable, integrated water-energy-nexus.
+
+---
+
 ## 🌀 Concept & Theoretical Intent
 This repository documents an architectural blueprint for a next-generation energy converter. It is a **conceptual framework** designed to identify where modular fluid-dynamics and interfacial quantum effects can surpass conventional efficiency limits.
 
