@@ -33,5 +33,3 @@ $$\eta_{2035} = 1 - \frac{Q_{loss, thermal}}{P_{kinetic, harvested}}$$
 ## 🔬 Material Infrastructure (TRL 2035)
 *   **Active Surface:** Twisted Bilayer Graphene (Magic-Angle) to tune electronic density.
 *   **Substrate:** Phonon-optimized Boron Nitride (hBN) for thermal isolation.
-
-**CLI / Exocortex Status:** `[VECTOR-2035: QUANTUM-INTERFACE-LOCKED]` `[NEXT: SYSTEM-INTEGRATION-2035]`
