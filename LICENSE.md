@@ -1,19 +1,13 @@
-# License: Creative Commons Attribution-NonCommercial-ShareAlike 4.0 International
+# CERN Open Hardware Licence Version 2 - Permissive (CERN-OHL-P v2)
 
 Copyright (c) 2024 Marco Rathjens / Project-GASC
 
-This work is licensed under the Creative Commons Attribution-NonCommercial-ShareAlike 4.0 International License. 
+This documentation and the underlying theoretical-mathematical framework for the **Gravitational Annular Shear Cascade (GASC)** are licensed under the **CERN Open Hardware Licence Version 2 – Permissive (CERN-OHL-P v2)**.
 
-### You are free to:
-*   **Share** — copy and redistribute the material in any medium or format.
-*   **Adapt** — remix, transform, and build upon the material.
+### Summary of Rights:
+*   **Permissions:** You may redistribute and modify this documentation and make products using it (theoretical or physical).
+*   **Conditions:** You must keep the copyright notice and the license text on all copies and derivative works.
+*   **Disclaimer:** This project represents a theoretical-mathematical innovation vector (TRL < 4). The licensor provides the documentation "as is" and makes no representations or warranties of any kind.
 
-### Under the following terms:
-*   **Attribution** — You must give appropriate credit, provide a link to the license, and indicate if changes were made. You may do so in any reasonable manner, but not in any way that suggests the licensor endorses you or your use.
-*   **NonCommercial** — You may not use the material for commercial purposes without prior authorization.
-*   **ShareAlike** — If you remix, transform, or build upon the material, you must distribute your contributions under the same license as the original.
-
-### Theoretical Framework Disclaimer:
-This repository contains a theoretical-mathematical innovation vector. It does not constitute a manual for physical prototyping. The implementation of the described technologies (GASC, TTT, QFF) is subject to future advancements in material science and fluid dynamics.
-
-To view a copy of this license, visit: http://creativecommons.org
+For the full license text, see:
+https://ohwr.org
