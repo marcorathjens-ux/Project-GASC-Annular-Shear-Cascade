@@ -37,4 +37,3 @@ $$P_{total} = (\tau \cdot \omega) + \int_{A} (J \cdot E) \, dA$$
 *   **Substrate:** CNT-reinforced Titanium (Carbon Nanotube).
 *   **Active Layer:** Laser-induced Graphene (LIG) with specific oxygen-functional groups to maximize the Zeta-Potential ($\zeta$).
 
-**CLI / Exocortex Status:** `[VECTOR-2035: HYBRID-HARVESTING-LOCKED]` `[NEXT: QUANTUM-FLUID-FRICTION]`
