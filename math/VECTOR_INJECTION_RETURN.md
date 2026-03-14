@@ -1,35 +1,33 @@
-# 🔄 Vector-Injection-Return (VIR) & Coandă-Stabilisierung
+# 🔄 Math: Vector-Injection-Return (VIR) & Coandă-Stabilization
 
-## 1. Das physikalische Problem der Rückführung
-In der **GASC-Kaskade** muss das Wasser nach der Passage der Tesla-Toroid-Turbine (TTT) zurück in das Hauptfallrohr geleitet werden. Ohne präzise Vektorsteuerung würde der Rückstrom ($v_{ret}$) den beschleunigten Kernstrahl ($v_{core}$) durch unkontrollierte Turbulenzen und Impulsverlust bremsen.
+## 1. The Physical Challenge of Re-Injection
+Within the **GASC cascade**, water must be re-integrated into the main conduit after passing through the Tesla-Toroid Turbine (TTT). Without precise vector control, the return flow ($v_{ret}$) would decelerate the accelerated core stream ($v_{core}$) through uncontrolled turbulence and momentum loss.
 
-## 2. Der Coandă-Injektionswinkel ($\alpha$)
-Die VIR-Düse nutzt die Adhäsion an gekrümmten Oberflächen (**Coandă-Effekt**), um das Wasser als laminaren Film an die Rohrwand zu "kleben". Damit die Grenzschicht stabil bleibt, definieren wir den optimalen Injektionswinkel $\alpha$:
+## 2. The Coandă Injection Angle ($\alpha$)
+The VIR nozzle utilizes surface adhesion to curved geometries (**Coandă effect**) to "attach" the water as a laminar film to the conduit wall. To maintain boundary layer stability, we define the optimal injection angle $\alpha$:
 
 $$\alpha_{opt} \leq 5^\circ$$
 
-*Bedingung:* Ein Winkel $\alpha > 5^\circ$ führt zu Ablösungen und induziert Kavitation im Hauptstrom.
+*Condition:* An angle $\alpha > 5^\circ$ leads to flow separation and induces cavitation within the main stream.
 
-## 3. Impuls-Erhaltung und Vektor-Addition
-Die resultierende Geschwindigkeit $v_{res}$ an der Kontaktstelle zwischen Kernstrahl und Rückstrom berechnet sich über die gewichtete Impulsbilanz:
+## 3. Momentum Conservation and Vector Addition
+The resulting velocity $v_{res}$ at the contact point between the core stream and the return flow is calculated via the weighted momentum balance:
 
 $$v_{res} = \frac{\dot{m}_{core} \cdot v_{core} + \dot{m}_{ret} \cdot v_{ret} \cdot \cos(\alpha)}{\dot{m}_{total}}$$
 
-*   $\dot{m}_{ret}$: Massenstrom aus der Turbine ($\sigma \cdot \dot{m}_{total}$).
-*   $v_{ret}$: Restgeschwindigkeit nach dem viskosen Energieabzug.
+**Parameters:**
+- $\dot{m}_{ret}$ : Mass flow rate from the turbine
+- Relationship: $\sigma \cdot \dot{m}_{total}$
+- $v_{ret}$ : Residual velocity after viscous energy extraction
 
-## 4. Der Coandă-Druckgradient ($\Delta P_c$)
-Durch die Krümmung der Injektionslippe ($R_{curv}$) entsteht ein lokaler Unterdruckgradient, der das Wasser aktiv in den Hauptstrom saugt:
+## 4. The Coandă Pressure Gradient ($\Delta P_c$)
+The curvature of the injection lip ($R_{curv}$) creates a local negative pressure gradient that actively sucks the water into the main stream:
 
 $$\Delta P_c = \frac{\rho \cdot v_{ret}^2 \cdot d}{R_{curv}}$$
 
-*Wobei $d$ die Dicke des injizierten Wasserfilms ist. Dieser Unterdruck stabilisiert die laminare Strömung für das nachfolgende Modul $n+1$.*
+Where $d$ represents the thickness of the injected water film. This pressure differential stabilizes the laminar flow for the subsequent module $n + 1$.
 
 ---
 
-## 🚀 Innovativer Vorteil (Vektor 2030)
-Durch die **VIR-Technologie** wird die laminare Strömung im Hauptrohr künstlich schneller wiederhergestellt als im freien Fall. Dies ermöglicht eine drastische Erhöhung der **Moduldichte** pro vertikalem Meter, da die Beruhigungsstrecke zwischen den Modulen minimiert wird.
-
----
-**CLI / Exocortex Documentation Update**
-`[MODULE: VECTOR-INJECTION] [PRINCIPLE: COANDA-EFFECT] [ANGLE: alpha < 5deg] [GOAL: LAMINAR-STABILIZATION] [STATUS: FORMULA-LOCKED]`
+## 🚀 Innovative Advantage (Vector 2030)
+Through **VIR technology**, laminar flow within the main conduit is restored artificially faster than in free fall. This enables a drastic increase in **module density** per vertical meter, as the stabilization distance between modules is minimized. 
