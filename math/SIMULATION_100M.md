@@ -3,6 +3,13 @@
 ## 1. Objective: Kinetic Energy Recovery (KER)
 Unlike high-head turbines designed for maximum extraction from dams, GASC is a **Kinetic Energy Recovery System (KERS)** for existing gravity-fed conduits (e.g., drinking water networks).
 
+### 1.1 Initial Velocity Assumption ($v_0$)
+For the 100m baseline, we assume an initial entry velocity of $v_0 \approx 2.0\,\text{m/s}$ (typical flow in pressurized conduits). 
+
+**Revised Initial Yield (Module 1):**
+$$v_1 = \sqrt{v_0^2 \cdot (1 - \sigma \cdot \eta_{visc} \cdot \eta_{VIR}) + 2 \cdot g \cdot \Delta x} \approx 14.1\,\text{m/s}$$
+*Impact:* The starting momentum slightly increases the first-stage yield but confirms the 520kW total trajectory as a stable conservative estimate.
+
 ## 2. Hardened Parameters & Full Calculation
 *   $\sigma = 0.1$, $\eta_{visc} = 0.75$, $\eta_{VIR} = 0.96$
 *   Mass Flow $\dot{m} = 1000\,\text{kg/s}$
