@@ -1,39 +1,35 @@
-# Core Concept: Gravitative Ring-Scherungs-Kaskade (GRSK)
+# 🌊 Core Concept: Gravitational Annular Shear Cascade (GASC)
 
-## Theoretische Fundamentierung
-Um die GRSK mathematisch zu beschreiben, definieren wir die Grenzschicht des fallenden Wassers. Ziel ist die Extraktion der energiereichen Randzone, während der Kernstrahl ($v_{core}$) ungehindert für die nächste Kaskadenstufe beschleunigt.
+## Theoretical Foundation
+The GASC framework is built upon the mathematical principles of fluid dynamics, specifically targeting the extraction of kinetic energy from the turbulent boundary layer while maintaining core flow acceleration ($v_{core}$) for subsequent cascade stages.
 
-### 1. Definition der Grenzschicht-Dicke ($\delta$)
-Nach der Strömungslehre (Prandtl) bildet sich an der Rohrwand eine Grenzschicht, in der die Viskosität des Wassers dominiert. Bei hoher Fallgeschwindigkeit ($v$) im vertikalen Rohr ($x = \text{Fallhöhe}$) berechnet sich die Dicke $\delta$ für turbulente Strömungen wie folgt:
+### 1. Definition of Boundary Layer Thickness ($\delta$)
+According to Prandtl’s boundary layer theory, a viscous interaction zone forms at the conduit wall. In high-velocity vertical flows ($v$) over a fall height ($x$), the thickness $\delta$ for turbulent regimes is approximated as follows:
 
 $$\delta(x) \approx 0.37 \cdot x \cdot (Re_x)^{-1/5}$$
 
-*Hierbei ist $Re_x$ die Reynolds-Zahl. Mit steigender Geschwindigkeit wird diese Schicht dünner, aber energetisch hochverdichtet.*
+*Note: As velocity increases, the boundary layer becomes thinner but energy-dense, requiring precise hyperbolic shearing.*
 
-### 2. Der Scherungs-Koeffizient ($\sigma$)
-Wir definieren $\sigma$ als das Verhältnis der Querschnittsfläche des abgeschälten Rings ($A_{ring}$) zur Gesamtfläche des Rohrs ($A_{total}$):
+### 2. The Shear Ratio ($\sigma$)
+We define $\sigma$ as the ratio of the diverted annular flow area ($A_{ring}$) to the total conduit cross-section ($A_{total}$):
 
 $$\sigma = \frac{A_{ring}}{A_{total}} = 1 - \left(\frac{r - \Delta r_{blade}}{r}\right)^2$$
 
-*   **Vektor 2030 Ziel:** $0.05 \leq \sigma \leq 0.15$
-*   **Begründung:** Ein Wert $\sigma > 0.15$ würde im Kernstrahl ein Teilvakuum oder signifikante Turbulenzen induzieren, welche die effektive Erdbeschleunigung ($g_{eff}$) für nachfolgende Module stören könnten.
+*   **Vector 2030 Target:** $0.05 \leq \sigma \leq 0.15$
+*   **Rationale:** A ratio exceeding $0.15$ would induce a partial vacuum or significant turbulence in the core stream, disrupting the effective gravitational acceleration ($g_{eff}$) for downstream modules.
 
-### 3. Theoretische Leistungsdichte ($P_{mod}$) pro Modul
-Die kinetische Energie des abgeschälten Volumens, welche der Tesla-Toroid-Turbine (TTT) zugeführt wird, basiert auf dem Massenstrom ($\dot{m}$) des Ringsegments:
+### 3. Theoretical Power Density ($P_{mod}$) per Module
+The kinetic energy extraction from the diverted annular mass flow ($\dot{m}$) within the Tesla-Toroid Turbine (TTT) is calculated as:
 
 $$P_{mod} = \frac{1}{2} \cdot (\sigma \cdot \dot{m}_{total}) \cdot v^2 \cdot \eta_{visc}$$
 
-*   $\eta_{visc}$: Viskoser Wirkungsgrad der Tesla-Scheiben (theoretisches Limit $\approx 95\%$).
-*   $v$: Lokale Fallgeschwindigkeit am Eintritt des Moduls.
+*   $\eta_{visc}$ : Viscous efficiency of the Tesla-discs (Theoretical limit $\approx 95\%$).
+*   $v$ : Local flow velocity at the module intake.
 
-### 4. Das Paradoxon der Kaskade (Der "Unbesetzt"-Faktor)
-Im Gegensatz zu konventionellen Systemen, die $v$ am Ende des Falls gegen Null abbremsen, bleibt $v$ am Ausgang eines GASC-Moduls $n$ nahezu identisch mit dem Eingang von Modul $n+1$.
+### 4. The Cascade Paradox (Momentum Conservation)
+Unlike conventional hydropower systems that decelerate $v$ towards zero at the exit, the exit velocity $v$ of a GASC module $n$ remains nearly identical to the entry velocity of module $n+1$.
 
-**Mathematische Erhaltungsbedingung:**
+**Mathematical Conservation Condition:**
 $$v_{exit} \geq v_{entry} \cdot \sqrt{1 - \sigma}$$
 
-Dadurch bleibt die kinetische Energie im Gesamtsystem gespeichert und summiert sich über die gesamte vertikale Trajektorie.
-
----
-**CLI / Exocortex Documentation Update**
-`[MODULE: SHEAR-CALC] [PARAM: Sigma=0.1] [MODEL: Prandtl-Boundary-Layer] [OBJECTIVE: Kinetic-Harvesting-Sustainability] [STATUS: Theoretical Limit Defined]`
+This allows kinetic energy to be "stored" and accumulated across the entire vertical trajectory of the system.
