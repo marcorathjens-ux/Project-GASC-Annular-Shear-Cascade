@@ -1,37 +1,33 @@
-# 📊 Simulation: 100m GASC-Kaskade vs. Standard-Turbine
+# 📊 Simulation: 100m GASC Cascade vs. Standard Turbine
 
-## 1. Simulations-Parameter (Konstanten)
-*   **Gesamthöhe ($H$):** $100\,\text{m}$
-*   **Modul-Intervall ($\Delta x$):** $10\,\text{m}$ (10 Module gesamt)
-*   **Scherungs-Rate ($\sigma$):** $0.1$ (10% Impuls-Abgriff pro Modul)
-*   **Wirkungsgrad ($\eta_{visc}$):** $0.9$ (Tesla-Toroid Effizienz)
-*   **Massenstrom ($\dot{m}$):** $1000\,\text{kg/s}$ (Beispielwert)
+## 1. Simulation Parameters (Constants)
+*   **Total Height ($H$):** $100\,\text{m}$
+*   **Module Interval ($\Delta x$):** $10\,\text{m}$ (Total of 10 modules)
+*   **Shear Ratio ($\sigma$):** $0.1$ (10% momentum extraction per module)
+*   **Viscous Efficiency ($\eta_{visc}$):** $0.9$ (Tesla-Toroid efficiency)
+*   **Mass Flow Rate ($\dot{m}$):** $1000\,\text{kg/s}$ (Reference value)
 
-## 2. Iterative Geschwindigkeits-Berechnung
-Im GASC-System berechnet sich die Eintrittsgeschwindigkeit $v_{n}$ für jedes Modul $n$ aus der Austrittsgeschwindigkeit des vorherigen Moduls $v_{n-1}$ plus der Gravitationsbeschleunigung auf der Teilstrecke $\Delta x$:
+## 2. Iterative Velocity Calculation
+In the GASC system, the entry velocity $v_n$ for each module $n$ is calculated from the exit velocity of the previous module $v_{n-1}$, supplemented by the gravitational acceleration over the segment $\Delta x$:
 
 $$v_n = \sqrt{v_{n-1}^2 \cdot (1 - \sigma) + 2 \cdot g \cdot \Delta x}$$
 
-### Beispiellauf (vereinfacht):
-1.  **Modul 1 (nach 10m):** $v_1 \approx 14.0\,\text{m/s}$ $\rightarrow$ Ernte $P_1$
-2.  **Modul 2 (nach weiteren 10m):** $v_2 \approx 18.5\,\text{m/s}$ (nachbeschleunigt trotz Abgriff)
-3.  **Modul 10 (bei 100m):** $v_{10}$ erreicht ein energetisches Gleichgewicht.
+### Sample Run (Simplified):
+1.  **Module 1 (at 10m):** $v_1 \approx 14.0\,\text{m/s}$ $\rightarrow$ Harvest $P_1$
+2.  **Module 2 (at 20m):** $v_2 \approx 18.5\,\text{m/s}$ (Re-accelerated despite extraction)
+3.  **Module 10 (at 100m):** $v_{10}$ approaches a dynamic energetic equilibrium.
 
-## 3. Gesamtenergie-Vergleich ($\sum P$)
+## 3. Total Energy Comparison ($\sum P$)
 
-### A. Klassische Turbine (Single Stage am Ende)
-Nutzt die gesamte Fallhöhe einmalig:
+### A. Standard Turbine (Single-Stage at Base)
+Utilizes the total head pressure once at the bottom:
 $$P_{std} = \dot{m} \cdot g \cdot H \cdot \eta_{turb} \approx 1000 \cdot 9.81 \cdot 100 \cdot 0.85 \approx 833\,\text{kW}$$
 
-### B. GASC-System (Multi-Stage Kaskade)
-Summiert die Leistungen aller 10 Module:
+### B. GASC System (Multi-Stage Cascade)
+Summates the power output of all 10 individual modules:
 $$\sum P_{GASC} = \sum_{i=1}^{10} \left( \frac{1}{2} \cdot (\sigma \cdot \dot{m}) \cdot v_i^2 \cdot \eta_{visc} \right)$$
 
-## 4. Theoretisches Ergebnis (Vektor 2030)
-In der Simulation zeigt sich, dass GASC durch die **kontinuierliche Impuls-Nutzung** und die Vermeidung von massiven Druckverlusten in langen Zuleitungen eine höhere **spezifische Leistungsdichte** pro verbautem Material erzielen kann.
+## 4. Theoretical Conclusion (Vector 2030)
+The simulation indicates that the GASC system achieves a higher **specific power density** per material unit by utilizing continuous momentum harvesting and avoiding massive pressure losses inherent in long penstocks.
 
-**Vorteil:** Während die Standard-Turbine bei 100m extremen statischen Druck aushalten muss, arbeiten GASC-Module immer nur mit dem lokalen kinetischen Druck der Fließgeschwindigkeit.
-
----
-**CLI / Exocortex Documentation Update**
-`[SIMULATION: 100M-CASCADE] [ITERATION: 10-STEPS] [COMPARISON: PEAK-VELOCITY-VS-STATIC-HEAD] [STATUS: MODEL-READY]`
+**Advantage:** While a standard turbine must withstand extreme static pressure at 100m, GASC modules only operate under the local kinetic pressure of the flow velocity.
