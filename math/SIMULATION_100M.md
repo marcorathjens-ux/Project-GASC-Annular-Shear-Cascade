@@ -1,33 +1,39 @@
-# 📊 Simulation: 100m GASC Cascade vs. Standard Turbine
+# 📊 Simulation V1.1: GASC Cascade vs. High-Performance Turbine
 
-## 1. Simulation Parameters (Constants)
+## 1. Hardened Simulation Parameters (Post-Audit V1.0)
+To ensure a scientifically sound comparison, parameters have been adjusted to reflect realistic mechanical and hydrodynamic limits.
+
 *   **Total Height ($H$):** $100\,\text{m}$
-*   **Module Interval ($\Delta x$):** $10\,\text{m}$ (Total of 10 modules)
-*   **Shear Ratio ($\sigma$):** $0.1$ (10% momentum extraction per module)
-*   **Viscous Efficiency ($\eta_{visc}$):** $0.9$ (Tesla-Toroid efficiency)
-*   **Mass Flow Rate ($\dot{m}$):** $1000\,\text{kg/s}$ (Reference value)
+*   **Module Interval ($\Delta x$):** $10\,\text{m}$ (10-stage cascade)
+*   **Shear Ratio ($\sigma$):** $0.1$ (Optimal momentum extraction)
+*   **Tesla-Toroid Efficiency ($\eta_{visc}$):** $0.75$ (Adjusted to realistic viscous coupling limits)
+*   **System Return Efficiency ($\eta_{VIR}$):** $0.96$ (Accounting for Coandă re-injection losses)
+*   **Benchmark Standard Turbine ($\eta_{std}$):** $0.94$ (High-performance Kaplan/Pelton reference)
 
-## 2. Iterative Velocity Calculation
-In the GASC system, the entry velocity $v_n$ for each module $n$ is calculated from the exit velocity of the previous module $v_{n-1}$, supplemented by the gravitational acceleration over the segment $\Delta x$:
+## 2. Iterative Momentum & Energy Balance
+The system velocity $v_n$ is calculated by accounting for the energy extraction of the previous module and the gravitational gain.
 
-$$v_n = \sqrt{v_{n-1}^2 \cdot (1 - \sigma) + 2 \cdot g \cdot \Delta x}$$
+**Iterative Velocity Equation:**
+$$v_n = \sqrt{v_{n-1}^2 \cdot (1 - \sigma \cdot \eta_{visc} \cdot \eta_{VIR}) + 2 \cdot g \cdot \Delta x}$$
 
-### Sample Run (Simplified):
-1.  **Module 1 (at 10m):** $v_1 \approx 14.0\,\text{m/s}$ $\rightarrow$ Harvest $P_1$
-2.  **Module 2 (at 20m):** $v_2 \approx 18.5\,\text{m/s}$ (Re-accelerated despite extraction)
-3.  **Module 10 (at 100m):** $v_{10}$ approaches a dynamic energetic equilibrium.
+*Note: The energy extracted is subtracted from the total kinetic potential before the next acceleration phase begins.*
 
-## 3. Total Energy Comparison ($\sum P$)
+## 3. Global Energy Comparison ($\sum P$)
 
-### A. Standard Turbine (Single-Stage at Base)
-Utilizes the total head pressure once at the bottom:
-$$P_{std} = \dot{m} \cdot g \cdot H \cdot \eta_{turb} \approx 1000 \cdot 9.81 \cdot 100 \cdot 0.85 \approx 833\,\text{kW}$$
+### A. High-Performance Standard Turbine
+Utilizing the full potential energy $E_p = \dot{m} \cdot g \cdot H$:
+$$P_{std} = \dot{m} \cdot g \cdot H \cdot \eta_{std} \approx 1000 \cdot 9.81 \cdot 100 \cdot 0.94 \approx 922\,\text{kW}$$
 
-### B. GASC System (Multi-Stage Cascade)
-Summates the power output of all 10 individual modules:
-$$\sum P_{GASC} = \sum_{i=1}^{10} \left( \frac{1}{2} \cdot (\sigma \cdot \dot{m}) \cdot v_i^2 \cdot \eta_{visc} \right)$$
+### B. GASC-System (Modular Cascade)
+The total power is the sum of all 10 modules, each factoring in its specific entry velocity and local losses:
+$$\sum P_{GASC} = \sum_{i=1}^{10} \left( \frac{1}{2} \cdot (\sigma \cdot \dot{m}) \cdot v_i^2 \cdot \eta_{visc} \cdot \eta_{VIR} \right)$$
 
-## 4. Theoretical Conclusion (Vector 2030)
-The simulation indicates that the GASC system achieves a higher **specific power density** per material unit by utilizing continuous momentum harvesting and avoiding massive pressure losses inherent in long penstocks.
+## 4. Audit-Driven Conclusion
+The GASC system does not claim to bypass the Second Law of Thermodynamics. Its primary innovation is **Infrastructural Efficiency**:
 
-**Advantage:** While a standard turbine must withstand extreme static pressure at 100m, GASC modules only operate under the local kinetic pressure of the flow velocity.
+1.  **Pressure Neutrality:** GASC operates without the extreme static head pressure required by standard turbines at 100m, reducing structural CAPEX.
+2.  **Momentum Recycling:** By harvesting energy in small increments ($\sigma=0.1$), the system maintains a high average velocity ($v_{avg}$) throughout the conduit, optimizing the flow-rate-to-power ratio in existing pipelines.
+
+---
+**Status:** `Hardened-Simulation-V1.1`  
+**Refinement:** `Accounted for VIR-losses and realistic Tesla-viscosity.`
