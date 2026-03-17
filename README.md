@@ -48,7 +48,7 @@ As the lead architect, I have established the fluid-dynamic and modular foundati
 
 ### 1. Annular Shear & Micro-Laminars
 *   **Engineering:** Massive parallelization of shearing surfaces to bypass the **Reynolds Paradox** and maintain laminar efficiency.
-*   👉 **[Mathematical Model: Milestone 1](./Doc/MILESTONE_1_MATHEMATICAL_MODEL.md)**
+*   👉 **[Mathematical Model: Milestone 1](./MILESTONE_1_MATHEMATICAL_MODEL.md)**
 
 ### 2. Binary Recirculation (The "Tree" Paradigm) 🌳
 *   **Mechanism:** Closed-loop, passive return flow using a low-boiling ORC medium, powered by geothermal gradients and turbine waste heat ($Q_{waste}$).
