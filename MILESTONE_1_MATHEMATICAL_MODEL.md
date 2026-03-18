@@ -2,7 +2,10 @@
 
 ## 1. Primary Shear Properties
 The foundation of the GASC system is the selective extraction of kinetic energy from the turbulent boundary layer $\delta$.
-
+---
+### 🌀 V1.6 Stability Update: Reynolds Paradox Resolution
+To maintain a stable laminar boundary layer at high flow velocities ($v > 20 m/s$), the characteristic length ($L$) is strategically reduced through **Massive Parallelization (Micro-Lamella Clusters)**. This structural shift ensures $Re < 20,000$, allowing for efficient viscous shearing where conventional macro-scale discs would trigger turbulent dissipation.
+---
 **Shear Ratio ($\sigma$):**
 $$\sigma = 1 - \left(1 - \frac{\delta}{R}\right)^2$$
 *Definition:* The fraction of the annular mass flow relative to the total flow.
